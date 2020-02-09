@@ -123,9 +123,9 @@ body { padding-top: 100px; }
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
       </li> -->
       <!-- <li class="nav-item dropdown show">
-        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Dropdown</a>
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
         <div class="dropdown-menu show" aria-labelledby="dropdown01">
-          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="index.html">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
@@ -153,17 +153,34 @@ body { padding-top: 100px; }
 
   <div class="container">
     <!-- Example row of columns -->
-    <div class="row">
-    </div>
-    <div class="row">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+     <div class="row">
       <div class="col-md-4"> 
       <img src ="..\img\XTrain.svg">
       </div>
       <div class="col-md-8">
-        <div class="card" style="width: 35rem;">
-          <div class="card-body">
-              <p class="card-text">Utilizing sentiment and daily performance of stock we ran a deep learning model to identify if we could predict a stocks performance.</p>
+        <img src ="..\img\X.svg">
+      </div>
+     </div>
+    <div class="row">
+      <div class="col-md-12"> 
+      <div class="card" style="width: 35rem;">
+        <div class="card-body">
+            <p class="card-text">Utilizing sentiment and daily performance of stock we ran a deep learning model to identify if we could predict a stocks performance. Utilizing 2 years worth of tweets and stock performance we fit our model with sentiment and stock performance, positive or negative.</p>
+        </div>
+      </div>
+      </div>
     </div>
+          
     <hr>
 
   </div> <!-- /container -->
@@ -171,9 +188,7 @@ body { padding-top: 100px; }
 </main>
 
 <footer class="container">
-  <p>© Trump Twit Stock Analysis 2017-2019</p>
-  <p><img src ="C:\Users\Owner\BootCampData\Final_Project\bootstrap\images\trumptwit.jpg"
-alt = "Trump twitter pic"></p>
+  <p>© Trump Twit Stock Analysis 2018-2019</p>
 </footer>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
