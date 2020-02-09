@@ -4,14 +4,14 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
-    <title>Trump Tweet Freqeuncy</title>
-​
+    <title>Jumbotron Template · Bootstrap</title>
+
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/jumbotron/">
-​
+
     <!-- Bootstrap core CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">    
 <link href="/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-​
+
     <!-- Favicons -->
 <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
 <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
@@ -21,8 +21,8 @@
 <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
 <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
 <meta name="theme-color" content="#563d7c">
-​
-​
+
+
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -32,7 +32,7 @@
         -ms-user-select: none;
         user-select: none;
       }
-​
+
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -73,7 +73,9 @@
     animation: sxt-play-anim-hover 0.91s steps(21);
     animation-fill-mode: forwards;
     background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/hoverstate.png") left center; }
-​
+
+body { padding-top: 100px; }
+
 @keyframes sxt-play-anim-hover {
   from {
     background-position: 0px; }
@@ -84,7 +86,7 @@
   .backpack.dropzone.saving .animation {
     background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/saving_loop.png") left center;
     animation: sxt-play-anim-saving steps(59) 2.46s infinite; }
-​
+
 @keyframes sxt-play-anim-saving {
   100% {
     background-position: -14750px; } }
@@ -93,7 +95,7 @@
   .backpack.dropzone.saved .animation {
     background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/saved.png") left center;
     animation: sxt-play-anim-saved steps(20) 0.83s forwards; }
-​
+
 @keyframes sxt-play-anim-saved {
   100% {
     background-position: -5000px; } }
@@ -104,82 +106,117 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-​
+
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="https://twitter.com/realDonaldTrump" target="_blank">@realDonaldTrump</a>
       </li>
       <li class="nav-item">
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/cjhutto/vaderSentiment" target="_blank">vaderSentiment</a>
+      </li>
+      <!-- <li class="nav-item">
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
-      <li class="nav-item dropdown show">
+      </li> -->
+      <!-- <li class="nav-item dropdown show">
         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Dropdown</a>
         <div class="dropdown-menu show" aria-labelledby="dropdown01">
           <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
-      </li>
+      </li> -->
     </ul>
-    <form class="form-inline my-2 my-lg-0">
+    <!-- <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    </form> -->
   </div>
 </nav>
-​
-<main role="main">
-​
+
+<div align = "center">
+    <font size="+10">Random Forests</font>
+  <br><br>
+</div>
+
+<main role="main" class="container mt-20 pt-10">
+
   <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron">
+  <!-- <div class="jumbotron">
     <div class="container">
       <h1 class="display-3"></h1>
-      <img src="https://www.google.com/search?q=image+of+trump+angry&tbm=isch&source=iu&ictx=1&fir=qLU_a8e4KXB4FM%253A%252CsDvCeDB_MUdyeM%252C_&vet=1&usg=AI4_-kRyQ1SslmvzEAUBbp_tWWvJrs4bHQ&sa=X&ved=2ahUKEwjqrri5oL7nAhWBLc0KHbkKDQ4Q9QEwAHoECAoQBA#imgrc=YhJSCU7amb7mfM" 
+      <img src="C:\Users\Owner\BootCampData\Final_Project\bootstrap\images\stock1.jpg" 
       alt="Stock header background" width="1200" height="300">
-      <p>This is an unusual TF-IDF model based on data retrieved from Trump's titter account.
-            Most TF-IDF analysis would be interested in a word that is rarely used, however, 
-            with this indivisual, I wanted to explore his term frequency based on the 
-            the words he used his most in his account.
-      </p>
+      <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+    </div>
+  </div> -->
+
+  <div class="container">
+    <div>
+      <p>Random forests or random decision forests are an ensemble learning method for classification, regression and other tasks that operate by constructing a multitude of decision trees at training time and outputting the class that is the mode of the classes or mean prediction of the individual trees. Random forest consists of a large number of individual decision trees that operate as an ensemble. Each individual tree in the random forest spits out a class prediction and the class with the most votes becomes our model’s prediction. The fundamental concept behind random forest is a simple but powerful one — the wisdom of crowds.</p>
+    </div>
+    <div>
+      <p>This particular example utilizes the Random Forest machine learning model from the module “Scikit-learn.” The model is to predict the upcoming trends of the stock market in correlation to President Trump’s tweets. The basis of this model was formulated based on Trump’s inclination to state extremely influential information and statements that are known to heavily impact the state of the American economy and associated parties. There have been proven instances where Trump’s tweets have immediate and powerful impact on the market. This may cause the tendencies in the market to become bipolar and more volatile.</p>
+    </div>
+    <div>
+      <p>There are two datasets involved: historical trends of Microsoft (MSFT) stock and the sentiment of Trump’s tweets. The Microsoft data was categorized into positive and negative depending on how the market performed on the day. The tweets were categorized into positive, neutral, and negative through natural language processing. The two datasets were merged as one to train and test the model. </p>
+    </div>
+    <div">
+      <p>Post training, the model’s accuracy came out as 52.8% using the test data. The below displays the effectiveness and validity of the model.</p>
     </div>
   </div>
-​
-  <div class="container">
-    <!-- Example row of columns -->
-    <div class="row">
-      <div class="col-md-4">
-        <h2>TF Chart</h2>
-        <p>Looking at just the top 10 words used by Trump,  </p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-      </div>
-      <div class="col-md-4">
-        <h2>Scatter Plot of TF and Reduced TF</h2>
-        <p>To see if there is a relationship between the two variables </p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-      </div>
-      <div class="col-md-4">
-        <h2>Chart 3</h2>
-        <p>Looking at the difference between the Tweet and tfrows values</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-      </div>
-    </div>
-​
-    <hr>
-​
-  </div> <!-- /container -->
-​
 </main>
-​
+<div align = "center"> 
+    <div>
+      <img src ="..\img\MSFT_Info.png">
+    </div>
+  </div>
+</div> 
+<br>
+<main role="main" class="container mt-20 pt-10">
+<div>
+  <p>The following graph illustrates the daily profitability of this model using the test data. As one can tell, most of the output were neutral with the remaining results spread between -1.5% and 3% </p>
+</div> 
+</main>
+<div align = "center"> 
+  <div>
+  <img src ="..\img\MSFT_daily_returns.svg">
+  </div>  
+</div> 
+<br>
+<main role="main" class="container mt-20 pt-10">
+<div>
+  <p>The following graph exhibits the strategy returns of the model verses the dates on the dataset. Strategy returns is calculated as the percentage change of each point in dataset multiplied by the model prediction. </p>
+</div>
+</main>
+<div align = "center"> 
+  <div> 
+  <img src ="..\img\MSFT_strategy_returns.svg">
+  </div>
+</div> 
+<main role="main" class="container mt-20 pt-10">
+  <br><br>
+  <div>
+    <p>This graph represents the visible correlation between the tweet sentiment and the opening and closing prices.  As is shown the sentiment of Trump tweets have a larger basis in the neutral value.  This shows the correlation that Trump tweets have little to no effect to open and close prices day by day with neutral sentiment values being higher than 70% on average.  The analysis can determine that using Trump tweets to predict positive or negative is an ultimately unrealistic characteristic to trade by.</p>
+  </div>
+</main>
+<div align = "center"> 
+  <img src ="..\img\ClosePriceComparison.svg">
+  </div>
+<br><br>
+
+
 <footer class="container">
-  <p>Trumps top ten Tweets Up Close</p>
+  <p>© Trump Twit Stock Analysis 2017-2019</p>
   <p><img src ="C:\Users\Owner\BootCampData\Final_Project\bootstrap\images\trumptwit.jpg"
 alt = "Trump twitter pic"></p>
 </footer>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
-​
+
 </body></html>
