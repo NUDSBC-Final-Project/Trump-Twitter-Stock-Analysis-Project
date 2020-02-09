@@ -1,7 +1,7 @@
 <html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Linear & Logistic ML models">
+    <meta name="description" content="SVM ML models">
     <meta name="author" content="Domingo Rodriguez">
     <meta name="generator" content="Jekyll v3.8.6">
     <title></title>
@@ -146,27 +146,18 @@ body { padding-top: 100px; }
   <div class="jumbotron">
     <div class="container">
       <h1 class="display-3"></h1>
-      <img src="..\bootstrap\images\stock4.jpg" 
+      <img src="..\bootstrap\images\stock2.jpg" 
       alt="Stock header background" width="1025" height="300">
      </div>
      <div align = "center">
        <br>
-    <font size="+10">Linear & Logistic Regression Models</font>
+    <font size="+10">Support Vector Machine Models</font>
 </div>
   </div> 
   <div class="container">
-    <div><p>My approach was an exercise in not over-engineering, over-fitting your data and
-      understanding, that Data Science, like other sciences, sometimes requires experimentation.
-    </p>
-      </div><p>Following a failed attempt at fitting our limited data to a Deep Learning model
-        I scrapped my initial code, and went back to the drawing board.  I then began implementing
-        the most straightforward ML model, a Linear Regression, in order to see if there was 
-        even a correlation between the Stock performance data and the Tweet sentiment score.
-      </p>
-    <div><p>My four choices for stocks were all in the transportation industry, with companies
-      that had been in the news without Trump's calling to attention, as well as two other stocks
-      that were not often in the news.  The stocks were American Airlines Grp(A1G.F), Boeing 
-      Aerospace(BA), CSX Rail(CSX), and General Motors(GM)
+    <div><p>Since the Linear and Logistic models had given numbers that made me wonder 
+        if the data trends were consistent, and our predictive goals were binary features
+        I decided I would try an additional ML model. Therefore I implemented a SVM.
     </p>
      <div class="row">
     <div class="col-md-3" align = "center"><img src = "images\A1GIcon.png" height = "200"></div>
@@ -174,87 +165,36 @@ body { padding-top: 100px; }
     <div class = "col-md-3" align = "center"><img src = "images\CSXIcon.jpg" height = "125"></div>
     <div class = "col-md-3" align = "center"><img src = "images\GMIcon.png" height = "100"></div>
      </div>
-    <div><p>Below are the plots for the Linear models for the respective
-      stocks.
+    <div><p>Results for the SVM modeling on the individual chosen stocks.
     </p>
       </div>
   </div>
 </main>
 <div align = "center"> 
+    <h2>American Airlines Grp.</h2><br>
     <div class = "row">
-      <div class = "col-md-6"><img src = "images\A1G.svg"></div>
-      <div class = "col-md-6"><img src = "images\BA.svg"> </div>     
-    </div>
+      <div class = "col-md-6"><img src = "images\A1G_svm_score.PNG"></div>
+      <div class = "col-md-6"><img src = "images\A1G_svm_DF.PNG"> </div>     
+    </div><br><br>
+    <h2>Boeing Aerospance</h2><br>
      <div class = "row">
-      <div class = "col-md-6"><img src = "images\A1GQuantify.PNG"></div>
-      <div class = "col-md-6"><img src = "images\BAQuantify.PNG"> </div>     
-    </div>
-      <br>
+      <div class = "col-md-6"><img src = "images\BA_svm_score.PNG"></div>
+      <div class = "col-md-6"><img src = "images\BA_svm_DF.PNG"> </div>     
+    </div><br><br>
+    <h2>CSX Rail</h2><br>
     <div class = "row">
-      <div class = "col-md-6"><img src = "images\CSX.svg"></div>
-      <div class = "col-md-6"><img src = "images\GM.svg"></div>
-    </div>
+      <div class = "col-md-6"><img src = "images\CSX_svm_score.PNG"></div>
+      <div class = "col-md-6"><img src = "images\CSX_svm_DF.PNG"></div>
+    </div><br><br>
+    <h2>General Motors</h2><br>
      <div class = "row">
-      <div class = "col-md-6"><img src = "images\CSXQuantify.PNG"></div>
-      <div class = "col-md-6"><img src = "images\GMQuantify.PNG"> </div>     
-    </div>
-      <br><p>As the above graphs illustrate, data points for the training and the test data 
-        almost perfectly aline, however, as the model scores show, the data does not
-        accurately fit the model.</p>
+      <div class = "col-md-6"><img src = "images\GM_svm_score.PNG"></div>
+      <div class = "col-md-6"><img src = "images\GM_svm_DF.PNG"> </div>     
+    </div><br>
+      <br><p>As the above scores illustrate, the SVM models were much more consistent as well
+          within an acceptable statistical accuracy range. Leading to more confidence
+        in the results of the models.</p>
   </div>
-</div> 
-<br>
-<main role="main" class="container mt-20 pt-10">
-<div>
-  <p>Since the plots for the test and training data correlated, but the models' accuracy
-    scores did not provide coroborration for the model statiscally, and moreover, since our
-    goals were to see if we could predict the stocks' behavior and label it in a binary format
-    of either "Positive" or "Negative" change following the tweets sentiment score, I chose to
-    implement a Logistic model as well.
-  </p>
-</div> 
-</main>
-<div align = "center"> 
- <div class = "row">
-      <div class = "col-md-4"></div>
-      <div class = "col-md-4"><img src = "images\A1GIcon.png"width = "175" height = "200"></div>
-      <div class = "col-md-4"></div>
-      <div class = "col-md-6"><img src = "images\A1GLogPred.PNG"></div>
-      <div class = "col-md-6" align = "center"><img src = "images\A1GLogReport.PNG"> </div>
-      <div class = "col-md-6"></div>
-       <div class = "col-md-6" align = "center"><img src = "images\A1GLogScore.PNG"></div>
-    </div>
-    <br><br>
-     <div class = "row">
-      <div class = "col-md-4"></div>
-      <div class = "col-md-4"><img src = "images\BoeingIcon.png"></div>
-      <div class = "col-md-4"></div>
-      <div class = "col-md-6"><img src = "images\BALogPred.PNG"></div>
-      <div class = "col-md-6" align = "center"><img src = "images\BALogReport.PNG"> </div>
-      <div class = "col-md-6"></div>
-       <div class = "col-md-6" align = "right"><img src = "images\BALogScore.PNG"></div>
-    </div>
-    <br><br>
-    <div class = "row">
-      <div class = "col-md-4"></div>
-      <div class = "col-md-4"><img src = "images\CSXIcon.jpg"></div>
-      <div class = "col-md-4"></div>
-      <div class = "col-md-6"><img src = "images\CSXLogPred.PNG"></div>
-      <div class = "col-md-6" align = "center"><img src = "images\CSXLogReport.PNG"> </div>
-      <div class = "col-md-6"></div>
-       <div class = "col-md-6" align = "center"><img src = "images\CSXLogScore.PNG"></div>
-    </div>
-    <br><br>
-    <div class = "row">
-      <div class = "col-md-4"></div>
-      <div class = "col-md-4"><img src = "images\GMIcon.png"></div>
-      <div class = "col-md-4"></div>
-      <div class = "col-md-6"><img src = "images\GMLogPred.PNG"></div>
-      <div class = "col-md-6" align = "center"><img src = "images\GMLogReport.PNG"> </div>
-      <div class = "col-md-6"></div>
-       <div class = "col-md-6" align = "center"><img src = "images\GMLogScore.PNG"></div>
-    </div>
-    <br><br>
 </div> 
 <br>
 <footer class="container">
