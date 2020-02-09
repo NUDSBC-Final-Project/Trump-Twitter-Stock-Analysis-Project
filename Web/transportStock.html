@@ -1,10 +1,10 @@
 <html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="description" content="Linear & Logistic ML models">
+    <meta name="author" content="Domingo Rodriguez">
     <meta name="generator" content="Jekyll v3.8.6">
-    <title>Jumbotron Template · Bootstrap</title>
+    <title></title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/jumbotron/">
 
@@ -74,9 +74,7 @@
     animation-fill-mode: forwards;
     background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/hoverstate.png") left center; }
 
-  /* p {
-      text-indent:15px;
-  } */
+body { padding-top: 100px; }
 
 @keyframes sxt-play-anim-hover {
   from {
@@ -140,81 +138,92 @@
   </div>
 </nav>
 
-<main role="main">
+
+
+<main role="main" class="container mt-20 pt-10">
 
   <!-- Main jumbotron for a primary marketing message or call to action -->
-  <!-- <div class="jumbotron">
+  <div class="jumbotron">
     <div class="container">
       <h1 class="display-3"></h1>
-      <img src="C:\Users\Owner\BootCampData\Final_Project\bootstrap\images\stock1.jpg" 
-      alt="Stock header background" width="1200" height="300">
-      <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
-    </div>
-  </div> -->
-  <div class="jumbotron" style="background-image: url(https://images.squarespace-cdn.com/content/v1/53528f90e4b0768cad09d33b/1541186576265-RWK67UCDI04WXSJR5GQO/ke17ZwdGBToddI8pDm48kLHJ70-JWA9dgEOAbI336f17gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0p4XabXLlNWpcJMv7FrN_NK7gC7ng9OtoO5ep7zCz0n67pPMXhJpSCNtoO-H2bRokQ/Artificial_intelligence.jpeg?format=1500w); background-size: cover;">
-    <div class="container" style="height: 200px;">...</div>
-      <!-- <img src="" width="150" height="230" alt=""> -->
-    </div>
+      <img src="..\bootstrap\images\stock4.jpg" 
+      alt="Stock header background" width="1025" height="300">
+     </div>
+     <div align = "center">
+       <br>
+    <font size="+10">Linear & Logistic Regression Models</font>
 </div>
+  </div> 
   <div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <p>     Analyzing presidential influence on stock performance is no easy task. There are countless ways to approach this subject, surely some very complex and some like the ones we have built.
-        Predicting stock performance is a big game, one that could yield significant profit.
-        </p>
-    </div>
-  </div> <!-- Example row of columns -->
-    <div class="row">
-      <div class="col-md-3">
-        <h2>Deep Learning</h2>
-        <p>Text goes here, whatever you want </p>
-        <p><a class="btn btn-secondary" href="DeepLearn.html" role="button">View details »</a></p>
+    <div><p>My approach was an exercise in not over-engineering, over-fitting your data and
+      understanding, that Data Science, like other sciences, sometimes requires experimentation.
+    </p>
+      </div><p>Following a failed attempt at fitting our limited data to a Deep Learning model
+        I scrapped my initial code, and went back to the drawing board.  I then began implementing
+        the most straightforward ML model, a Linear Regression, in order to see if there was 
+        even a correlation between the Stock performance data and the Tweet sentiment score.
+      </p>
+    <div><p>My four choices for stocks were all in the transportation industry, with companies
+      that had been in the news without Trump's calling to attention, as well as two other stocks
+      that were not often in the news.  The stocks were American Airlines Grp(A1G.F), Boeing 
+      Aerospace(BA), CSX Rail(CSX), and General Motors(GM)
+    </p>
+     <div class="row">
+    <div class="col-md-3"><img src = "images\A1GIcon.png"></div>
+    <div class = "col-md-3"><img src = "images\BoeingIcon.png"></div>
+    <div class = "col-md-3"><img src = "images\CSXIcon.jpg"></div>
+    <div class = "col-md-3"><img src = "images\GMIcon.png"></div>
+     </div>
+    <div>
       </div>
-      <div class="col-md-3">
-        <h2>Random Forest</h2>
-        <p>Text goes here, whatever you want. </p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-      </div>
-      <div class="col-md-3">
-        <h2>Word Press</h2>
-        <p>Text goes here, whatever you want.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-      </div>
-      <div class="col-md-3">
-        <h2>Naive Bayes</h2>
-        <p>Text goes here, whatever you want.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-      </div>
-      <div class="col-md-3">
-        <img src = "images\stock3.jpg" width = "250" height = "150" alt="Trump twitter icon">
-      </div>
-      <div class="col-md-3">
-        <h2>Linear, Logistic Regression Model </h2>
-        <p>Multiple ML model approach for cross comparison and 
-          analysis of trends</p>
-        <p><a class="btn btn-secondary" href="transportStock.html" role="button">View details »</a></p>
-      </div>
-      <div class = "col-md-3">
-        <h2>Support Vector Model</h2>
-        <p>Using SVM to predict binary outcome category for Stock and information</p>
-        <p><a class="btn btn-secondary" href="svmModel.html" role="button">View details »</a></p>
-      
-      </div>
-      <div class="col-md-3">
-       <img src = "images\trumptwit.jpg" width = "250" height = "150" alt = "Understanding 
-      Stock and Trump twitter relationships"></div>
-    </div>
-
-    <hr>
-
-  </div> <!-- /container -->
-
+    <div">
+     </div>
+  </div>
 </main>
+<div align = "center"> 
+    <div>
+      <img src ="..\img\MSFT_Info.png">
+    </div>
+  </div>
+</div> 
+<br>
+<main role="main" class="container mt-20 pt-10">
+<div>
+  <p>The following graph illustrates the daily profitability of this model using the test data. As one can tell, most of the output were neutral with the remaining results spread between -1.5% and 3% </p>
+</div> 
+</main>
+<div align = "center"> 
+  <div>
+  <img src ="..\img\MSFT_daily_returns.svg">
+  </div>  
+</div> 
+<br>
+<main role="main" class="container mt-20 pt-10">
+<div>
+  <p>The following graph exhibits the strategy returns of the model verses the dates on the dataset. Strategy returns is calculated as the percentage change of each point in dataset multiplied by the model prediction. </p>
+</div>
+</main>
+<div align = "center"> 
+  <div> 
+  <img src ="..\img\MSFT_strategy_returns.svg">
+  </div>
+</div> 
+<main role="main" class="container mt-20 pt-10">
+  <br><br>
+  <div>
+    <p>This graph represents the visible correlation between the tweet sentiment and the opening and closing prices.  As is shown the sentiment of Trump tweets have a larger basis in the neutral value.  This shows the correlation that Trump tweets have little to no effect to open and close prices day by day with neutral sentiment values being higher than 70% on average.  The analysis can determine that using Trump tweets to predict positive or negative is an ultimately unrealistic characteristic to trade by.</p>
+  </div>
+</main>
+<div align = "center"> 
+  <img src ="..\img\ClosePriceComparison.svg">
+  </div>
+<br><br>
+
 
 <footer class="container">
-  <p>© Trump Twit Stock Analysis 2018-2019</p>
-    <img src ="images\trumptwit2.jpg" width="125" height="75" alt="Trump tweet icons">
+  <p>© Trump Twit Stock Analysis 2017-2019</p>
+  <p><img src ="C:\Users\Owner\BootCampData\Final_Project\bootstrap\images\trumptwit.jpg"
+alt = "Trump twitter pic"></p>
 </footer>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
