@@ -185,26 +185,28 @@ body { padding-top: 100px; }
   <!-- </div> /container -->
   <div class="container">  
       <div class="row">
-      <div class="col-md-4"> 
-        <br>
-        <br>
-            <p class="card-text">Taking a differnt approach we transformed the extracted tweets by vectorizing daily tweets with TF-IDF</p>
-            <br>
-            <P>After training the model we tested with our split data. The test data had a %% accuracy.  Let's run the model to see how it predicts todays S&P 500 performance.</P>
-            <!-- <ul style="list-style-type:disc;"> -->
-              
+        <div class="col-md-8"> 
+            <P>In this example, Scikit-learn’s Gaussian Naive Bayes model was utilized. Naïve Bayes requires a small amount of training data to estimate the parameters. “Naïve Bayes methods are a set of supervised learning algorithms based on applying Bayes’ theorem with the “naïve” assumptions of conditional independence between every pair of features given the value of the class.” — https://scikit-learn.org/stable/modules/naive_bayes.html</P>
+              <br>
+            <p>Taking a different approach, Trump’s tweets were transformed utilizing Scikit-learn’s tfidfVectorizer. “The goal of using tf-idf instead of the raw frequencies of occurrence of a token in a given document is to scale down the impact of tokens that occur very frequently in a given corpus and that are hence empirically less informative than features that occur in a small fraction of the training corpus.” — https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfTransformer.html</p>
+              <br>
+            <p>Outcome: The S&P 500 performance and Trump’s TF-IDF tweets resulted in a 47.4% mean accuracy on the given test data.</p>
+              <br>
+        </div>
+        <div cass="col-md-4"> 
               <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Run Model!</a></p>
-              <!-- <button type="button" class="btn btn-secondary" href="/">Secondary</button> -->
               <h5>Model Prediction: {{outcome}}</h5>
               <br>  
               <h5>Todays S&P 500 performance: {{stock}}</h5>
-              
-            <!-- </ul> -->
-          </div>
-      <div class="col-md-6">
-        <img src = "../static/img/NegSentiment.svg">
+              <br>
+              <img src = "../static/img/Chiefs.jpg" width="375" height="225">
+        </div>         
       </div>
+    <div class="row">
+      <div class="col-md-12">
+        <img src = "../static/img/S&P.svg" width="1000" height="800">
       </div>
+    </div>
   </div><!-- /container -->
 
 <!-- </main> -->

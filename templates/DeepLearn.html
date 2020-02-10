@@ -184,27 +184,60 @@ body { padding-top: 100px; }
     <div class="container"> 
       <div class="row justify-content-center">
         <div class="col-md-12"> 
-          <p class="card-text">Utilizing sentiment and daily performance of stock we ran a deep learning model to identify if we could predict a stocks performance. Utilizing 2 years worth of tweets and stock performance we fit our model with sentiment and stock performance, positive or negative.</p>
+          <p class="card-text"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h6>What’s the difference between Neural Networks and Deep Learning? </h6>
+          <p>Neural networks have only three layers: input layer (where the data enters the system), one hidden layer (where the information is processed) and an output layer (where the system decides what to do based on the data). A deep neural network is a neural network with more than three layers (more than one hidden layer).</p>
+          <br/>
+          <h6>What is the concept behind the models?</h6>
+          <p>The models underpinning concept is to predict the daily trends of the stock market in correlation to President Trump’s daily tweets. Trump’s tendency to tweet extremely influential information and statements are known to impact the state of the American economy and associated parties.</p>
+          <br/>
+          <h6>What data was utilized to train and test the model?</h6>
+          <p>In short, a sentiment analyzer evaluated Donald Trump daily tweets for the past two years, outputting the percentage of negative, neutral, and positive sentiment. Concurrently, stock data was captured to indicate positive or negative daily performance. In total 6 models were trained and tested: X, PFE, BA, BAC, MSFT, and S&P 500 Index.</p>
+        </div> 
+            <div class="row">
+              <div class="col-md-auto">
+                <img src = "../static/img/NegSentiment.svg">
+                <!-- <p>The pos, neu, and neg scores are ratios for proportions of text that fall in each category (so these should all add up to be 1... or close to it with float operation). These are the most useful metrics if you want multidimensional measures of sentiment for a given sentence.</p> -->
+              </div>
+              <div class="col-md-4">
+                <br/>
+                <br/>
+                <br/>
+                <br>
+                <div class="col-md-8 col-md-push-12">The pos, neu, and neg scores are ratios for proportions of text that fall in each category (so these should all add up to be 1... or close to it with float operation). These are the most useful metrics if you want multidimensional measures of sentiment for a given sentence.</div>
+              </div>
+            </div>
+      </div>  
+            <br/>
+      <div class="row">
+        <div class="col-md-12">   
+          <h6>What was used to construct the models?</h6>
+          <p>These deep learning models utilize Keras sequential model to configure the deep learning process. The sequential model, a linear stack of layers, is one of the simplest model types. Keras is a, pythonic, library that runs on top of TensorFlow which is a library for deep learning and fast numerical computing. Keras was developed with a focus on fast and easy experimentation.</p>
+          <br/>
+          <h6>How was the model configured?</h6>
+          <p>These examples are supervised deep learning models. Each having one input layer with three inputs (negative, neutral, or positive % sentiment), two hidden layers with twelve nodes in each, and one output layer with two outputs indicating the prediction (positive or negative). Each model was trained over 1,000 epochs.</p>
+          <br/>
+          <h6>What was the outcome?</h6>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4">
-          <ul style="list-style-type:disc;">
+          <!-- <ul style="list-style-type:disc;">
             <br>
             <br>
             <br>
             <br>
-            <li>Sklearn</li>
-            <li>Keras, deep learning framework</li>
+            <li>TensorFLow</li>
+            <li>Keras</li>
             <li>One hot encoding</li>
             <li>Train_test_split</li>
             <li>Standard scaler</li>
             <li>One input layer, One hidden Layer, One output</li>
-          </ul>
-        </div>
-        <div class="col-md-6"> 
-          <!-- <p class="card-text">Utilizing sentiment and daily performance of stock we ran a deep learning model to identify if we could predict a stocks performance. Utilizing 2 years worth of tweets and stock performance we fit our model with sentiment and stock performance, positive or negative.</p> -->
-          <img src = "../static/img/NegSentiment.svg"> 
+          </ul> -->
         </div>
      </div>
       <!-- <div class="col-md-2"> 
