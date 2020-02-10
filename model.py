@@ -79,7 +79,7 @@ def scrape_info():
     time.sleep(1)
 
     SP = driver.find_elements_by_xpath("//g-card-section/div/g-card-section/span[2]/span")
-    stock=(SP[1].text)
+    stock=(SP[0].text)
     # dic = {'outcome':outcome[0], 'stock':stock}
     driver.quit()
 
