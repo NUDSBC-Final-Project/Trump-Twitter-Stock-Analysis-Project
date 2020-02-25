@@ -1,2 +1,1 @@
-# Final_Project
-Final Project for NWU Data Science Boot Camp
+With the use of a Twitter webscraper we have been able to create a sentiment value for Trump Tweets and use it to analyze against the stock market with mulitple industry stocks with the S&P 500 as a baseline.  The analysis was used to create different machine learning algorithms to test if we could predict a positive or negative move in the stock market.
